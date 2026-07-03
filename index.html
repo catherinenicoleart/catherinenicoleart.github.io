@@ -1,11 +1,226 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Catherine Nicole Art</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background: #f8f3ef;
+      color: #2b2b2b;
+    }
+
+    header {
+      padding: 28px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fffaf7;
+      border-bottom: 1px solid #eadbd2;
+    }
+
+    .logo {
+      font-size: 26px;
+      letter-spacing: 2px;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+
+    nav a {
+      margin-left: 24px;
+      text-decoration: none;
+      color: #2b2b2b;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    .hero {
+      padding: 90px 8%;
+      text-align: center;
+      background: linear-gradient(to bottom, #fffaf7, #f3e1dc);
+    }
+
+    .hero h1 {
+      font-size: 54px;
+      font-weight: 300;
+      margin-bottom: 18px;
+      letter-spacing: 3px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 30px;
+      font-size: 19px;
+      line-height: 1.7;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 30px;
+      background: #2b2b2b;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      letter-spacing: 1px;
+      font-size: 14px;
+    }
+
+    section {
+      padding: 70px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 34px;
+      font-weight: 300;
+      margin-bottom: 40px;
+      letter-spacing: 2px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: white;
+      padding: 32px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+      text-align: center;
+    }
+
+    .card h3 {
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+
+    .card p {
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .about {
+      background: #fffaf7;
+      text-align: center;
+    }
+
+    .about p {
+      max-width: 750px;
+      margin: auto;
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    .contact {
+      text-align: center;
+      background: #2b2b2b;
+      color: white;
+    }
+
+    .contact a {
+      color: white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      background: #1f1f1f;
+      color: #ddd;
+      font-size: 13px;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      nav a {
+        margin: 0 8px;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Catherine Nicole Art</h1>
-  <p>Miniature art, custom murals, and handmade pieces.</p>
-  <p><a href="https://catherinenicoleartde.etsy.com">Shop on Etsy</a></p>
+
+  <header>
+    <div class="logo">Catherine Nicole Art</div>
+    <nav>
+      <a href="#shop">Shop</a>
+      <a href="#murals">Murals</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Handmade Art with a Little Sparkle</h1>
+    <p>
+      Miniature wall art, dollhouse-scale statement pieces, resin geodes,
+      and custom murals created with soft color, texture, and personality.
+    </p>
+    <a class="button" href="https://catherinenicoleartde.etsy.com" target="_blank">
+      Shop the Etsy Collection
+    </a>
+  </section>
+
+  <section id="shop">
+    <h2 class="section-title">What I Create</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Miniature Wall Art</h3>
+        <p>Small-scale artwork designed for dollhouses, displays, shelves, and collectors.</p>
+      </div>
+
+      <div class="card">
+        <h3>Resin Geodes</h3>
+        <p>Sparkly handmade pieces with shimmer, crushed glass, mica, and soft coastal colors.</p>
+      </div>
+
+      <div class="card">
+        <h3>Custom Murals</h3>
+        <p>Painted wall murals for homes, creative spaces, nurseries, bathrooms, and more.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="murals" class="about">
+    <h2 class="section-title">Custom Murals</h2>
+    <p>
+      Looking for something personal and one-of-a-kind? I create custom wall murals
+      that bring color, personality, and creativity into your space.
+    </p>
+  </section>
+
+  <section id="about" class="about">
+    <h2 class="section-title">About Catherine Nicole Art</h2>
+    <p>
+      Catherine Nicole Art is a handmade art brand focused on creative,
+      feminine, and unique pieces — from miniature artwork and resin designs
+      to custom painted murals.
+    </p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="section-title">Let’s Connect</h2>
+    <p>Email: <a href="mailto:catherinenicoleart@gmail.com">catherinenicoleart@gmail.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/catherinenicole_art" target="_blank">@catherinenicole_art</a></p>
+  </section>
+
+  <footer>
+    © 2026 Catherine Nicole Art. All rights reserved.
+  </footer>
+
 </body>
 </html>
